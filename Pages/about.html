@@ -7,6 +7,68 @@
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/sustainability.css">
+    <style>
+        .navbar {
+            background-color: #004080; 
+            color: white; 
+            padding: 15px 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links li a:hover {
+            color: #ffcc00; /* color hover */
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .menu-toggle .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background-color: #004080;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -17,6 +79,7 @@
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="sustainability.html">Sustainability</a></li>
+            <ul>
             <button class="menu-toggle" id="menu-toggle">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -24,15 +87,10 @@
             </button>
         </div>
     </nav>
-<div class="wrapper">
-    <div class="sidebar">
-        <h2>About Us</h2>
-        <ul class="nav">
-            <li><a href="about.html">Our story</a></li>
-        </ul> 
-    </div>
+
     <div class="main_content">
         <div class="header">Who we are</div>  
+        <img src="/img/15.jpg"" alt="Clevermount School" class="d-block w-15"
         <div class="info">
           <div>
             CleverMount is a family-founded school that opened in November 2022 out passion for quality education in Rwanda's less 

@@ -5,6 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sustainability</title>
     <link rel="stylesheet" href="/css/sustainability.css">
+    <style>
+        /* Navbar Styling */
+        .navbar {
+            background-color: #004080; /* Match navbar color */
+            color: white;
+            padding: 15px 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links li a:hover {
+            color: #ffcc00; /* Yellow on hover */
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .menu-toggle .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: white;
+        }
+
+        /* Page Background to Match Other Pages */
+        .wrapper {
+            background-color: #f5f5f5; /* Consistent with other pages */
+            padding: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background-color: #004080;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
