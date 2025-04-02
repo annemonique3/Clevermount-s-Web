@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/sustainability.css">
+    <style>
+        .navbar {
+            background-color: #004080; 
+            color: white; 
+            padding: 15px 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links li a:hover {
+            color: #ffcc00; /* color hover */
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .menu-toggle .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background-color: #004080;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="home.html" class="brand">
+            </a>
+            <ul class="nav-links" id="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+            <ul>
+            <button class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="main_content">
+        <div class="header">Who we are</div>  
+        <img src="/15.jpg"" alt="Clevermount School" class="d-block w-15"
+        <div class="info">
+          <div>
+            CleverMount is a family-founded school that opened in November 2022 out passion for quality education in Rwanda's less 
+            privileged areas. 
+            Inspired by our daughters'experiences in boarding school and the desire 
+            for our youngest son, Valentin, to have access to quality education without sacrificing precious family time as 
+            a young boy, we embarked on this journey. Indeed, God used Valentin to ignite a passion we have always had as a family.
+
+            Our goal is twofold: 
+            
+            To provide quality education and benefit the community, addressing the challenges of family 
+            separation for education and lack of quality education opportunities for many children in Rwanda's rural communities, starting from Rulindo district.
+            We believe that foundations are core and our call is to build solid foundations for future generations.
+
+            Since November 2022, Clevermount has impacted over 175 students with over 50 students successfully graduated. Our curriculum emphasizes on 
+            competency-based learning, fostering skills in reading, writing, public speaking, math, and critical thinking from an early age.
+            </div> 
+            </div>
+      </div>
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+<script >
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+    document.getElementById('menu').classList.toggle('active');
+});
+</script>
+</body>
+</html>
